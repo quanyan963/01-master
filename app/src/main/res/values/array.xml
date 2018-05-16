@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lighting_name">
+        <item>@string/moon_light</item>
+        <item>@string/fireworks</item>
+        <item>@string/hot_wheels</item>
+        <item>@string/spectrum</item>
+        <item>@string/full_spectrum</item>
+        <item>@string/glow</item>
+        <item>@string/morph</item>
+        <item>@string/beat_meter</item>
+        <item>@string/wave</item>
+        <item>@string/full_wave</item>
+
+        <item>@string/mood</item>
+        <item>@string/aurora</item>
+    </string-array>
+
+    <string-array name="hot_wheels_color_type">
+        <item>@string/random</item>
+        <item>@string/color1</item>
+        <item>@string/color3</item>
+        <item>@string/color7</item>
+    </string-array>
+    <string-array name="moonlight_color_type">
+        <item>@string/white</item>
+        <item>@string/colored</item>
+    </string-array>
+    <string-array name="spectrum_color_type">
+        <item>@string/default_</item>
+    </string-array>
+    <string-array name="full_spectrum_color_type">
+        <item>@string/full</item>
+    </string-array>
+    <string-array name="pulsate_color_type">
+        <item>@string/moon_light</item>
+        <item>@string/color1</item>
+        <item>@string/color3</item>
+        <item>@string/color7</item>
+    </string-array>
+    <string-array name="morph_color_type">
+        <item>@string/color2</item>
+        <item>@string/color3</item>
+        <item>@string/color7</item>
+    </string-array>
+    <string-array name="beat_meter_color_type">
+        <item>@string/default_</item>
+    </string-array>
+    <string-array name="full_wave_color_type">
+        <item>@string/color8</item>
+    </string-array>
+    <string-array name="wave_color_type">
+        <item>@string/color1</item>
+    </string-array>
+    <string-array name="mood_color_type">
+        <item>@string/mood</item>
+    </string-array>
+    <string-array name="audio_prompts_model">
+        <item>@string/off</item>
+        <item>@string/voice_and_tones</item>
+    </string-array>
+
+</resources>

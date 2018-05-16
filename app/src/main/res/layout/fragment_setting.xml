@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_bg">
+
+    <TextView
+        android:id="@+id/tv_hint"
+        style="@style/main_tv"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/item_padding_left"
+        android:layout_marginTop="@dimen/item_padding_left"
+        android:text="@string/speaker_options"
+        android:textColor="@color/text_hint_color"
+        android:textSize="@dimen/text_size" />
+
+    <com.example.txtledbluetooth.widget.ItemLayout
+        android:id="@+id/item_audio_prompts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_hint"
+        custom:iv_right="@mipmap/icon_right_arrow"
+        custom:text_left_top="@string/audio_prompts"
+        custom:text_right="@string/voice_and_tones" />
+
+
+    <com.example.txtledbluetooth.widget.ItemLayout
+        android:id="@+id/item_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_audio_prompts"
+        custom:text_left_bottom="@string/reset_to_default_hint"
+        custom:text_left_top="@string/reset_to_default" />
+</RelativeLayout>

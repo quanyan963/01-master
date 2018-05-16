@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_bg">
+
+    <ImageView
+        android:id="@+id/iv_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:src="@mipmap/icon_clock" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_clock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/item_height"
+        android:layout_marginRight="@dimen/item_height"
+        android:layout_marginTop="@dimen/item_height"
+        android:orientation="horizontal">
+
+        <com.wx.wheelview.widget.WheelView
+            android:id="@+id/wheel_view1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.wx.wheelview.widget.WheelView
+            android:id="@+id/wheel_view2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.wx.wheelview.widget.WheelView
+            android:id="@+id/wheel_view3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/layout_clock1"
+        android:layout_marginLeft="@dimen/item_padding_left"
+        android:background="@color/item_selected_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout_clock1"
+        android:layout_height="@dimen/item_height"
+        android:layout_above="@+id/layout_clock2"
+        android:layout_marginLeft="@dimen/title_height"
+        android:layout_marginRight="@dimen/title_height"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_nav_clock" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/main_tv"
+                android:text="@string/off_capital" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin" />
+
+            <TextView
+                style="@style/main_tv"
+                android:text="@string/on_capital" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_nav_clock" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/layout_clock2"
+        android:layout_marginLeft="@dimen/item_padding_left"
+        android:background="@color/item_selected_bg" />
+
+    <RelativeLayout
+        android:id="@+id/layout_clock2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/title_height"
+        android:layout_marginRight="@dimen/title_height"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_nav_clock" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/main_tv"
+                android:text="@string/off_capital" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin" />
+
+            <TextView
+                style="@style/main_tv"
+                android:text="@string/on_capital" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_nav_clock" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layout_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height">
+
+        <ImageView
+            android:id="@+id/iv_item_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/item_padding_left"
+            android:src="@mipmap/icon_bluetooth" />
+
+        <RelativeLayout
+            android:id="@+id/layout_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/item_padding_left"
+            android:layout_toRightOf="@+id/iv_item_left"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_left_top"
+                style="@style/main_tv"
+                android:text="@string/bluetooth"
+                android:textColor="@drawable/menu_icon_dashboard" />
+
+            <TextView
+                android:id="@+id/tv_left_bottom"
+                style="@style/main_tv"
+                android:layout_below="@id/tv_left_top"
+                android:text="@string/bluetooth"
+                android:textColor="@color/medium_gray"
+                android:textSize="@dimen/text_size"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_right"
+            style="@style/main_tv"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/layout_right"
+            android:text="@string/bluetooth"
+            android:textColor="@color/colorAccent"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/layout_right"
+            android:layout_width="@dimen/touch_area"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/item_padding_left">
+
+            <ImageView
+                android:id="@+id/iv_item_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_selected" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

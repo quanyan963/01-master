@@ -1,0 +1,73 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <!--返回键样式-->
+        <item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle</item>
+    </style>
+
+    <style name="AppTheme.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="main_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/main_text_size</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="view_color_board">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="rb_color_board">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/view_board</item>
+    </style>
+
+    <style name="seek_bar">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/min_margin</item>
+        <item name="android:layout_marginRight">@dimen/min_margin</item>
+        <item name="android:max">255</item>
+        <item name="android:maxHeight">@dimen/seek_bar_height</item>
+        <item name="android:minHeight">@dimen/seek_bar_height</item>
+        <item name="android:progressDrawable">@drawable/seek_bar</item>
+    </style>
+
+    <style name="et_color_board">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/main_text_size</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:background">@color/item_selected_bg</item>
+        <item name="android:maxLength">3</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:digits">@string/et_digits_rgb</item>
+        <item name="android:imeOptions">actionGo</item>
+        <item name="android:paddingLeft">@dimen/min_margin</item>
+        <item name="android:paddingRight">@dimen/item_padding_left</item>
+    </style>
+
+    <style name="layout_mini_touch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/divide_padding_right</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

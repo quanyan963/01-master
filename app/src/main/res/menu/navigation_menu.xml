@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <group>
+        <!-- <item
+             android:id="@+id/nav_item_dashboard"
+             android:checked="true"
+             android:checkable="true"
+             android:icon="@mipmap/icon_nav_dashboard_0"
+             android:title="@string/dashboard" />-->
+        <item
+            android:id="@+id/nav_item_sources"
+            android:checkable="true"
+            android:icon="@mipmap/icon_nav_sources_0"
+            android:title="@string/sources" />
+       <item
+            android:id="@+id/nav_item_music"
+            android:checkable="true"
+            android:icon="@mipmap/icon_nav_music_0"
+            android:title="@string/music" />
+        <item
+            android:id="@+id/nav_item_lighting"
+            android:checkable="true"
+            android:checked="true"
+            android:icon="@mipmap/icon_nav_lighting_0"
+            android:title="@string/lighting" />
+        <!--<item-->
+            <!--android:id="@+id/nav_item_clock"-->
+            <!--android:checkable="true"-->
+            <!--android:icon="@mipmap/icon_nav_clock"-->
+            <!--android:title="@string/clock" />-->
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_item_setting"
+                android:checkable="true"
+                android:title="@string/settings" />
+            <item
+                android:id="@+id/nav_item_about"
+                android:checkable="true"
+                android:title="@string/about" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_music_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple_list_item_effect">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="@dimen/progress_bar_height"
+        android:minHeight="@dimen/progress_bar_height" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/music_control_height"
+        android:layout_below="@+id/progress_bar">
+
+        <ImageView
+            android:id="@+id/iv_music_head"
+            android:layout_width="@dimen/music_control_img_height"
+            android:layout_height="@dimen/music_control_img_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:src="@mipmap/icon_morph" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/iv_music_head"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_music_name"
+                style="@style/main_tv"
+                android:text="@string/song_name"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_singer"
+                style="@style/main_tv"
+                android:layout_below="@+id/tv_music_name"
+                android:text="@string/singer"
+                android:textSize="@dimen/text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_play"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_music_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_pause" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

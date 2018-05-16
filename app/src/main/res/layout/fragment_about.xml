@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_bg">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/logo_margin_top"
+        android:src="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/tv_hint1"
+        style="@style/main_tv"
+        android:layout_below="@+id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/divide_padding_right"
+        android:text="@string/creative_halo"
+        android:textColor="@color/white"
+        android:textSize="@dimen/app_name_size" />
+
+    <TextView
+        android:id="@+id/tv_hint2"
+        style="@style/main_tv"
+        android:layout_below="@+id/tv_hint1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/ver_info"
+        android:textColor="@color/white"
+        android:textSize="@dimen/ver_tv_size" />
+
+    <TextView
+        android:id="@+id/tv_hint3"
+        style="@style/main_tv"
+        android:layout_below="@+id/tv_hint2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:text="@string/copyright_info"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/main_text_size" />
+
+    <TextView
+        android:id="@+id/tv_hint4"
+        style="@style/main_tv"
+        android:layout_below="@+id/tv_hint3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:text="@string/privacy_policy"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/main_text_size" />
+
+    <TextView
+        android:id="@+id/tv_hint5"
+        style="@style/main_tv"
+        android:layout_below="@+id/tv_hint4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/item_height"
+        android:gravity="center"
+        android:text="@string/firmware_ver"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_text_size" />
+</RelativeLayout>
